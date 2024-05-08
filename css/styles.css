@@ -47,6 +47,7 @@ img {
 
 header {
     width: 1440px;
+    margin: 0 auto;
 }
 
 .header {
@@ -547,6 +548,8 @@ fieldset {
     display: flex;
     flex-direction: column;
     padding: 24px 24px;
+    justify-content: center;
+    
 }
 
 .modal-close-button {
@@ -557,6 +560,7 @@ fieldset {
     background-color: #e7e9fc;
     align-self: flex-end;
     margin-bottom: 24px;
+    cursor: pointer;
 }
 
 .modal-text {
@@ -601,8 +605,8 @@ fieldset {
 
 .form-icon {
     position: absolute;
-    top: 32px;
-    left: 19px;
+    top: 26px;
+    left: 16px;
 }
 
 textarea.form-input {
@@ -616,6 +620,7 @@ textarea.form-input {
     gap: 8px;
     justify-items: center;
     margin-top: 20px;
+    margin-bottom: 24px;
 }
 
 .agriment-text {
@@ -632,4 +637,27 @@ textarea.form-input {
     text-decoration-skip-ink: none;
     color: #4d5ae5;
     cursor: pointer;
+    
+}
+
+.submit-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #4d5ae5;
+    cursor: pointer;
+    width: 169px;
+    height: 56px;
+    align-self: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-button:hover, .submit-button:focus {
+    background-color: #404bbf;
 }
