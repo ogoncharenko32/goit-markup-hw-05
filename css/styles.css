@@ -539,6 +539,16 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease-in-out;
+}
+
+.modal-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+
 }
 
 .modal {
@@ -660,4 +670,58 @@ textarea.form-input {
 
 .submit-button:hover, .submit-button:focus {
     background-color: #404bbf;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-left: 80px;
+    gap: 24px;
+    align-items: flex-end;
+}
+
+.subscribe-label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.subscribe-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-button {
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    display: flex;
+    gap: 16px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: #404bbf;
+}
+
+.subscribe-icon {
+    fill: #fff;
+
 }
