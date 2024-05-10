@@ -631,7 +631,7 @@
     <div class="modal-overlay">
       <div class="modal">
         <button type="button" class="modal-close-button">
-          <svg height="8" width="8">
+          <svg class="modal-cross-icon" height="8" width="8">
             <use
               href="./images/icons.svg#icon-close-black"
               height="8"
@@ -682,10 +682,29 @@
           </label>
         </form>
         <div class="agriment-box">
-          <input type="checkbox" name="terms" value="terms" />
+          <input
+            class="agriment-checkbox"
+            type="checkbox"
+            name="terms"
+            value="terms"
+          />
+          <svg class="checkbox-icon-default" width="16" height="16">
+            <use
+              href="./images/icons.svg#icon-default"
+              width="16"
+              height="16"
+            ></use>
+          </svg>
+          <svg class="checkbox-icon-click" width="16" height="16">
+            <use
+              href="./images/icons.svg#icon-click"
+              width="16"
+              height="16"
+            ></use>
+          </svg>
           <p class="agriment-text">
             I accept the terms and conditions of the
-            <a class="policy-text">Privacy Policy</a>
+            <a class="policy-text" href="">Privacy Policy</a>
           </p>
         </div>
         <button class="submit-button" type="submit">Send</button>

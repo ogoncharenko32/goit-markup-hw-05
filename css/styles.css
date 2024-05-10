@@ -540,9 +540,9 @@ fieldset {
     justify-content: center;
     align-items: center;
 
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 250ms ease-in-out;
+#    opacity: 0;
+ #   pointer-events: none;
+ #   transition: opacity 250ms ease-in-out;
 }
 
 .modal-overlay.is-open {
@@ -571,6 +571,21 @@ fieldset {
     align-self: flex-end;
     margin-bottom: 24px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-cross-icon {
+    fill: #2e2f42;
+    width: 8px;
+}
+
+.modal-close-button:hover, .modal-close-button:focus {
+    background-color: #404BBF;
+}
+
+.modal-close-button:hover .modal-cross-icon,
+.modal-close-button:focus .modal-cross-icon {
+    fill: #fff;
 }
 
 .modal-text {
@@ -615,6 +630,13 @@ fieldset {
     width: 360px;
     background: url(/images/icons.svg#icon-person-black) no-repeat scroll 12px 12px;
     background-position: 19px 50%;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #4d5ae5;
+
 }
 
 .form-icon {
@@ -635,6 +657,32 @@ textarea.form-input {
     justify-items: center;
     margin-top: 20px;
     margin-bottom: 24px;
+    position: relative;
+}
+
+.agriment-checkbox {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-icon-default {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.checkbox-icon-click {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agriment-box input:checked ~ .checkbox-icon-click {
+    opacity: 1;
 }
 
 .agriment-text {
