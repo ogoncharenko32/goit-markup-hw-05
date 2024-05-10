@@ -619,7 +619,7 @@ fieldset {
 
 .form-icon {
     position: absolute;
-    top: 26px;
+    top: 28px;
     left: 16px;
 }
 
@@ -728,7 +728,6 @@ textarea.form-input {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     display: flex;
-    gap: 16px;
 }
 
 .subscribe-button:hover,
@@ -739,4 +738,5 @@ textarea.form-input {
 .subscribe-icon {
     fill: #fff;
     align-self: center;
+    margin-left: 16px;
 }
