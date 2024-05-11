@@ -687,7 +687,7 @@ textarea.form-input {
     position: relative;
 }
 
-input[type="checkbox"]:checked .privacy-policy {
+.visually-hidden:checked .privacy-policy {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
