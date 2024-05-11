@@ -687,29 +687,10 @@ textarea.form-input {
     position: relative;
 }
 
-.agriment-checkbox {
-    visibility: hidden;
-    cursor: pointer;
-}
-
-.checkbox-icon-default {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-}
-
-.checkbox-icon-click {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.agriment-box input:checked ~ .checkbox-icon-click {
-    opacity: 1;
+input[type="checkbox"]:checked .privacy-policy {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .agriment-text {
